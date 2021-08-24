@@ -1,19 +1,19 @@
 package com.teksystems.compositiondemo.rooms.kitchen;
 
 public class Refrigerator {
-    private int interiorVolume;
+    private double interiorVolume;
     private String manufacturer;
 
-    public Refrigerator(int interiorVolume, String manufacturer) {
+    public Refrigerator(double interiorVolume, String manufacturer) {
         this.interiorVolume = interiorVolume;
         this.manufacturer = manufacturer;
     }
 
-    public int getInteriorVolume() {
+    public double getInteriorVolume() {
         return interiorVolume;
     }
 
-    public void setInteriorVolume(int interiorVolume) {
+    public void setInteriorVolume(double interiorVolume) {
         this.interiorVolume = interiorVolume;
     }
 

@@ -7,7 +7,19 @@ public class Kitchen extends Room {
     private Counters counters;
     private Refrigerator refrigerator;
 
-    public Kitchen(Cabinets cabinets, Counters counters, Refrigerator refrigerator) {
+    public Kitchen(String cabinetsDefaultShelves, String countersDefaultHeight, Refrigerator refrigerator) {
+        super(10, 12);
+        this.cabinets = new Cabinets(cabinetsDefaultShelves);
+        this.counters = new Counters(countersDefaultHeight);
+        this.refrigerator = refrigerator;
+    }
+
+    public Kitchen(int kitchenWidth,
+                   int kitchenHeight,
+                   Cabinets cabinets,
+                   Counters counters,
+                   Refrigerator refrigerator) {
+        super(kitchenWidth, kitchenHeight);
         this.cabinets = cabinets;
         this.counters = counters;
         this.refrigerator = refrigerator;

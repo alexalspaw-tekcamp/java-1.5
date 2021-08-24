@@ -4,6 +4,11 @@ public class Counters {
     private int height;
     private String counterMaterial;
 
+    public Counters(String counterMaterial) {
+        this.height = 4;
+        this.counterMaterial = counterMaterial;
+    }
+
     public Counters(int height, String counterMaterial) {
         this.height = height;
         this.counterMaterial = counterMaterial;

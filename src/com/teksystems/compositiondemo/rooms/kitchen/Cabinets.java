@@ -4,6 +4,11 @@ public class Cabinets {
     private int shelves;
     private String woodType;
 
+    public Cabinets(String woodType) {
+        this.shelves = 3;
+        this.woodType = woodType;
+    }
+
     public Cabinets(int shelves, String woodType) {
         this.shelves = shelves;
         this.woodType = woodType;
