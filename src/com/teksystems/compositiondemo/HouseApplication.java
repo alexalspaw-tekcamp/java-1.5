@@ -11,6 +11,7 @@ public class HouseApplication {
 //        Counters counters = new Counters(4, "Granite");
         Refrigerator refrigerator = new Refrigerator(12.8, "KitchenAid");
         Kitchen fancyKitchen = new Kitchen("Maple", "Granite", refrigerator);
-        House myHouse = new House(1400,3,2, fancyKitchen);
+        House myCondo = new House(1400,3,2, fancyKitchen);
+        System.out.println(myCondo.getYard());
     }
 }

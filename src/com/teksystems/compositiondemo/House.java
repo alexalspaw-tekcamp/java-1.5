@@ -7,24 +7,19 @@ public class House {
     private int squareFootage;
     private int numBedrooms;
     private double numBathrooms;
+
     // composition using our own classes
     private Kitchen kitchen;
     private Yard yard;
 
-    // multiple constructors
-    public House(int squareFootage, int numBedrooms, double numBathrooms, Kitchen kitchen) {
+    public House(int squareFootage, int numBedrooms, double numBathrooms, Kitchen kitchen, Yard... yard) {
         this.squareFootage = squareFootage;
         this.numBedrooms = numBedrooms;
         this.numBathrooms = numBathrooms;
         this.kitchen = kitchen;
-    }
-
-    public House(int squareFootage, int numBedrooms, double numBathrooms, Kitchen kitchen, Yard yard) {
-        this.squareFootage = squareFootage;
-        this.numBedrooms = numBedrooms;
-        this.numBathrooms = numBathrooms;
-        this.kitchen = kitchen;
-        this.yard = yard;
+        if (yard == null) {
+            this.yard = new Yard();
+        }
     }
 
     public int getSquareFootage() {

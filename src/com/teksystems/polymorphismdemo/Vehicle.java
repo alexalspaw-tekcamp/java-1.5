@@ -11,6 +11,10 @@ public class Vehicle {
         this.model = model;
     }
 
+    public String honk() {
+        return "honk";
+    }
+
     public String getColor() {
         return color;
     }
@@ -33,9 +37,5 @@ public class Vehicle {
 
     public void setModel(String model) {
         this.model = model;
-    }
-
-    public String honk() {
-        return "honk";
     }
 }
